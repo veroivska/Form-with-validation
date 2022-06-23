@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<form class="form display__center-cln">
+    <div class="wrapper__form">
+        <h1>Create Account</h1>
+        <div class="display__center">
+            <div class="form__control margin max__width">
+                <label class="label" for="fname">First name*</label><br>
+                <input class="input" type="text" id="fname" name="fname"
+                       placeholder="enter your first name"><br>
+                <small>Error massage</small>
+            </div>
+            <div class="margin max__width">
+                <label class="label" for="lname">Last name</label><br>
+                <input class="input" type="text" id="lname" name="lname" placeholder="enter your last name">
+            </div>
+        </div>
+
+        <div class="margin form__control">
+            <label class="label" for="email">Email*</label><br>
+            <input class="input" type="email" id="email" name="email"  placeholder="enter your email">
+            <small>Error massage</small>
+        </div>
+
+        <div class="display__center">
+            <div class="margin max__width form__control">
+                <label class="label" for="pwd">Password*</label><br>
+                <input class="input" type="password" id="pwd" name="pwd"  placeholder="enter your password">
+                <small>Error massage</small>
+            </div>
+            <div class="margin max__width form__control">
+                <label class="label" for="cpwd">Confirm Password*</label><br>
+                <input class="input" type="password" id="cpwd" name="cpwd"
+                       placeholder="enter your password again">
+                <small>Error massage</small>
+            </div>
+        </div>
+
+        <div class="display__center">
+            <div class="display__center-cln margin max__width">
+                <label class="label">Gender:</label>
+                <div class="display__center">
+                    <div class="display__center">
+                        <div class="display__center">
+                            <input type="radio" id="male" name="gender" value="Male">
+                            <label for="male">Male</label>
+                        </div>
+                        <div class="display__center margin">
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="display__center-cln margin max__width">
+                <label class="label">Hobbies</label>
+                <div class="display__center">
+                    <div class="display__center">
+                        <input type="checkbox" id="music" name="music" value="Music">
+                        <label for="music"> Music</label>
+                    </div>
+                    <div class="display__center">
+                        <input type="checkbox" id="sports" name="sports" value="Sports">
+                        <label for="sports"> Sports</label>
+                    </div>
+                    <div class="display__center">
+                        <input type="checkbox" id="travel" name="travel" value="Travel">
+                        <label for="travel"> Travel</label>
+                    </div>
+                    <div class="display__center">
+                        <input type="checkbox" id="movies" name="movies" value="Movies">
+                        <label for="movies"> Movies</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="display__center">
+            <div class="display__center-cln margin max__width">
+                <label class="label" for="source">Source of Income</label>
+                <select class="input" id="source" name="source">
+                    <option value="Employed">Employed</option>
+                    <option value="Wages">Wages</option>
+                </select>
+            </div>
+            <div class="display__center-cln margin max__width">
+                <label class="label" for="income">Income</label>
+                <input type="range" id="income" name="income"
+                       min="0" max="100000" value="0">
+            </div>
+        </div>
+        <div class="display__center max__width">
+            <div class="margin file">
+                <label class="label" for="myfile"> Upload Profile Picture</label>
+                <input type="file" id="myfile" name="myfile">
+            </div>
+            <div class="margin max__width">
+                <label class="label" for="age">Age</label>
+                <input class="input" type="number" id="age" name="age" min="18" value="18"><br><br>
+            </div>
+        </div>
+
+        <div class="margin">
+            <label class="label">Bio</label><br>
+            <textarea class="input" name="message" rows="5" cols="60">
+    </textarea><br>
+        </div>
+        <br>
+        <input class="submit input" id="btnSubmit" type="submit" value="Create">
+    </div>
+</form>
+
+<script src="main.js"></script>
+<script src="form-validator.js"></script>
+</body>
+</html>

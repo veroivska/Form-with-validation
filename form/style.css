@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600&display=swap');
+
+:root {
+    --font-stack: 'Work Sans', sans-serif;
+
+    --font-color: #19282f;
+    --font-label-color: #617BE3;
+    --font-btn-color: #fff;
+
+    --error-color: #EB5353;
+
+    --main-bg-color: #617BE3;
+    --form-bg-color:  #f0fffa;
+    --input-bg-color: #f0fffa;
+    --btn-bg-color: #9ACEFF;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+input:focus {
+    outline: none;
+}
+textarea:focus {
+    outline: none;
+}
+body {
+    font-family: var(--font-stack);
+    font-size: 0.8rem;
+    background-color: var(--main-bg-color);
+    color: var(--font-color);
+    padding: 1rem;
+}
+h1{
+    text-align: center;
+    color: var(--font-label-color);
+}
+.display__center{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.display__center-cln{
+    display: flex;
+    flex-direction: column;
+}
+.margin{
+    margin: 0.5rem 0;
+}
+
+.form {
+    padding: 1.5rem;
+    max-width: 35rem;
+    margin: 0 auto;
+    background-color: var(--form-bg-color);
+    border-radius: 1rem;
+}
+.label{
+    font-size: 1.01rem;
+    color: var(--font-label-color);
+}
+.input {
+    padding: 0.6rem 0.4rem;
+    border-radius: 0.3rem;
+    border: 1px solid lightgrey;
+    background-color: var(--input-bg-color);
+    width: 100%;
+}
+.form__control{
+    position: relative;
+}
+small{
+    visibility: hidden;
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    color: var(--error-color);
+}
+.error{
+    border-color:  var(--error-color);
+}
+.visible{
+    visibility: visible;
+}
+.submit{
+    max-width: 10rem;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--btn-bg-color);
+    color: var(--font-btn-color);
+    align-self: flex-end;
+    cursor: pointer;
+}
+.wrapper__form{
+    max-width: 670px;
+    display: flex;
+    flex-direction: column;
+}
+.file{
+    align-self: flex-start;
+}
+.max__width{
+    min-width: 245px;
+}
+
+@media (max-width: 600px) {
+    .display__center{
+        flex-direction: column;
+    }
+}
